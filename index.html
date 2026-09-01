@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Untuk Kamu ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BACKGROUND BINTANG -->
+    <div class="stars"></div>
+
+    <!-- MUSIK -->
+    <audio id="musik" loop>
+        <source src="musik/lagu.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- OPENING -->
+    <section id="opening" class="opening">
+
+        <div class="opening-content">
+
+            <div class="moon">🌙</div>
+
+            <p class="small-text">
+                Ada sesuatu untukmu...
+            </p>
+
+            <h1>
+                Untuk <span>Sayangku</span>
+            </h1>
+
+            <p>
+                Sebuah kejutan kecil yang dibuat
+                khusus untuk seseorang yang sangat berarti.
+            </p>
+
+            <button onclick="mulaiWebsite()">
+                💌 Buka Kejutan
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- WEBSITE UTAMA -->
+    <main id="website" class="hidden">
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="subtitle">
+                    HAPPY BIRTHDAY
+                </p>
+
+                <h1>
+                    Selamat Ulang Tahun,
+                    <span>Sayang ❤️</span>
+                </h1>
+
+                <p class="hero-text">
+                    Hari ini bukan hanya tentang bertambahnya usia,
+                    tapi tentang bersyukur karena seseorang seindah
+                    kamu hadir di dunia ini.
+                </p>
+
+                <div class="scroll">
+                    ↓
+                    <br>
+                    scroll perlahan
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- UCAPAN -->
+        <section class="section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    SEBUAH UCAPAN
+                </p>
+
+                <h2>
+                    Untuk seseorang yang spesial
+                </h2>
+
+                <div class="letter">
+
+                    <p>
+                        Hai sayang...
+                    </p>
+
+                    <p>
+                        Hari ini adalah hari yang spesial.
+                        Hari ketika seseorang yang sangat aku sayangi
+                        dilahirkan ke dunia.
+                    </p>
+
+                    <p>
+                        Aku mungkin tidak bisa memberikan
+                        seluruh dunia untukmu.
+                        Tapi aku ingin selalu menjadi seseorang
+                        yang membuat dunia kecilmu terasa lebih indah.
+                    </p>
+
+                    <p>
+                        Semoga di usia yang baru ini,
+                        semua hal baik datang kepadamu.
+                        Semoga senyummu selalu lebih banyak
+                        daripada air matamu.
+                    </p>
+
+                    <p>
+                        Dan kalau suatu hari nanti kamu merasa lelah,
+                        ingatlah bahwa ada seseorang di sini
+                        yang selalu percaya kepadamu.
+                    </p>
+
+                    <p class="signature">
+                        Dengan penuh cinta,<br>
+                        <span>Aku ❤️</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOTO -->
+        <section class="section gallery-section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    OUR MEMORIES
+                </p>
+
+                <h2>
+                    Beberapa momen favoritku
+                </h2>
+
+                <div class="gallery">
+
+                    <div class="photo">
+                        <img src="foto/foto1.jpg">
+                    </div>
+
+                    <div class="photo">
+                        <img src="foto/foto2.jpg">
+                    </div>
+
+                    <div class="photo">
+                        <img src="foto/foto3.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HARAPAN -->
+        <section class="section wishes">
+
+            <div class="container">
+
+                <p class="section-label">
+                    MY WISH FOR YOU
+                </p>
+
+                <h2>
+                    Doa kecilku untukmu
+                </h2>
+
+                <div class="wish-grid">
+
+                    <div class="wish">
+                        <div>🌷</div>
+                        <h3>Bahagia</h3>
+                        <p>
+                            Semoga setiap harimu dipenuhi
+                            alasan untuk tersenyum.
+                        </p>
+                    </div>
+
+                    <div class="wish">
+                        <div>✨</div>
+                        <h3>Impian</h3>
+                        <p>
+                            Semoga semua impian yang kamu
+                            perjuangkan perlahan menjadi nyata.
+                        </p>
+                    </div>
+
+                    <div class="wish">
+                        <div>❤️</div>
+                        <h3>Cinta</h3>
+                        <p>
+                            Semoga kamu selalu dikelilingi
+                            orang-orang yang tulus menyayangimu.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COUNTDOWN -->
+        <section class="section countdown-section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    YOUR SPECIAL DAY
+                </p>
+
+                <h2>
+                    Hari ini milikmu 🎂
+                </h2>
+
+                <div id="countdown">
+
+                    <div>
+                        <strong id="days">00</strong>
+                        <span>Hari</span>
+                    </div>
+
+                    <div>
+                        <strong id="hours">00</strong>
+                        <span>Jam</span>
+                    </div>
+
+                    <div>
+                        <strong id="minutes">00</strong>
+                        <span>Menit</span>
+                    </div>
+
+                    <div>
+                        <strong id="seconds">00</strong>
+                        <span>Detik</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- KEJUTAN -->
+        <section class="surprise">
+
+            <div class="container">
+
+                <p class="section-label">
+                    ONE LAST THING
+                </p>
+
+                <h2>
+                    Aku punya sesuatu untukmu...
+                </h2>
+
+                <button onclick="kejutan()">
+                    🎁 Buka Kejutan
+                </button>
+
+                <div id="surpriseMessage" class="hidden surprise-message">
+
+                    <div class="cake">
+                        🎂
+                    </div>
+
+                    <h2>
+                        HAPPY BIRTHDAY ❤️
+                    </h2>
+
+                    <p>
+                        Terima kasih sudah hadir
+                        dan menjadi bagian indah
+                        dalam hidupku.
+                    </p>
+
+                    <p>
+                        Aku sayang kamu.
+                        Hari ini, besok,
+                        dan semoga sampai
+                        rambut kita sama-sama putih. 🤍
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                Dibuat dengan ❤️ khusus untukmu
+            </p>
+
+            <p>
+                © 2026
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
